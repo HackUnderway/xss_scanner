@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Scan Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; }
+        .vuln { margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; }
+        .label { font-weight: bold; color: #2c3e50; }
+        .url { word-break: break-all; background: #f5f5f5; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>XSS Scan Report</h1>
+    <p>Generated on: {{ scan_date }}</p>
+    
+    <h2>Scan Details</h2>
+    <p><span class="label">Target:</span> {{ target_url }}</p>
+    <p><span class="label">Method:</span> {{ method }}</p>
+    <p><span class="label">WAF:</span> {{ waf_type or 'None detected' }}</p>
+    
+    <h2>Vulnerabilities</h2>
+    {% if vulnerabilities %}
+        {% for vuln in vulnerabilities %}
+            <div class="vuln">
+                <h3>{{ vuln.type }} via {{ vuln.method }}</h3>
+                {% if vuln.complete_url %}
+                    <p><span class="label">Exploit URL:</span><br>
+                       <span class="url">{{ vuln.complete_url }}</span>
+                    </p>
+                {% endif %}
+                <p><span class="label">Payload:</span> {{ vuln.payload }}</p>
+                {% if vuln.context %}
+                    <p><span class="label">Context:</span> {{ vuln.context }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No vulnerabilities found.</p>
+    {% endif %}
+</body>
+</html>
