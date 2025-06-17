@@ -173,9 +173,12 @@ python main.py "https://portswigger-labs.net/xss/xss.php?x=" -p config/payloads/
   <img src="assets/reporte_pdf.png" alt="Reporte_Pdf" width="600"/>
 </p>
 ### Créditos de payloads usados:
+
 https://github.com/gprime31/WAF-bypass-xss-payloads
 https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+
 ### Recursos para ver formatos JSON:
+
 https://jsonscope.com/
 https://jsoncrack.com/editor
 https://2x2xplz.github.io/json_visualizer/default.htm
