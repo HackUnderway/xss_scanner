@@ -10,4 +10,8 @@ beautifulsoup4>=4.12.0
 lxml>=4.9.4
 colorama>=0.4.6
 termcolor>=2.4.0
+<<<<<<< HEAD
 fpdf>=1.7.2
+=======
+fpdf2>=2.8.0
+>>>>>>> 38cb369 (feat: migrate to fpdf2 in requirements, add funding configuration and update reporter)
